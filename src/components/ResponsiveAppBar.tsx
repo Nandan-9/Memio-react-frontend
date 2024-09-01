@@ -108,7 +108,7 @@ function SlideBar({type}:{type:string}){
 
 function SearchBtn(){
 
-  const [open,setOpen] = useRecoilState(modalState);
+  const [_,setOpen] = useRecoilState(modalState);
   return(
     <>
     <Button

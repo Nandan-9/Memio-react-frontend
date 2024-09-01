@@ -62,7 +62,7 @@ function TextBox(){
          </svg>
          </span>
               </InputAdornment>}
-              
+            value={value}
             label="search"
           />
         </FormControl>

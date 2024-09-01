@@ -1,18 +1,13 @@
 
 import './App.css'
-import ResponsiveAppBar from './components/ResponsiveAppBar'
 import { createTheme, ThemeOptions } from '@mui/material/styles';
 import { ThemeProvider } from '@emotion/react';
 import ContentPage from './components/ContentPage';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Test from './components/LandingCards';
 export const themeOptions: ThemeOptions = {
 };
-import image from './assets/bg.jpg'
-import { Tyest } from './components/Tyest';
 
 import Landingpage from './pages/Landingpage';
-import { RecoilRoot } from 'recoil';
 
 const theme = createTheme({
   palette: {
@@ -65,7 +60,6 @@ function App() {
       <Routes>
       <Route path="/" element ={<Landingpage/> }></Route>
       <Route path="/content/:id" element ={<ContentPage></ContentPage>}></Route>
-      <Route path="/tyest" element ={<Tyest></Tyest>}></Route>
 
       
     </Routes>

@@ -2,7 +2,6 @@ import { Box, Button, Typography } from '@mui/material';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
-import { useState } from 'react';
 
 interface CodeBlk {
   language : string;
@@ -14,7 +13,6 @@ interface CodeBlk {
 
 
 function CodeBlock({language,code}:CodeBlk){
-  const [status,setStatus] = useState(false)
   return (
     <>
     <Box 
