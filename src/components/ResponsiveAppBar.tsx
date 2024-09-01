@@ -52,7 +52,7 @@ function ResponsiveAppBar({type}:{type:string}) {
               textDecoration: 'none',
               cursor: 'default',
               '&:hover': {
-                cursor: 'default'
+                cursor: 'pointer'
               },
             }}
             onClick={()=> handleNavigate()}
