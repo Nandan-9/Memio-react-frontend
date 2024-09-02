@@ -72,9 +72,10 @@ function Cards({content}:{content:Contents}){
         variant="outlined"
         sx={{
             borderColor: hover ? "none" : "#4f4f4f",
-            width: 800,
-            height: 200,
+            width: {xs:200,md:800},
+            height: {xs : 200,md : 200},
             display: "flex",
+            flexDirection : {xs : 'column',md : 'row'},
             boxShadow : 4,
             
         }}
@@ -101,7 +102,12 @@ function Cards({content}:{content:Contents}){
             }}            >
                 {content.title}
             </Typography>
-            <Typography>
+            <Typography
+            sx = {{
+
+                display : {xs : 'none', md : 'revert'}
+            }}
+            >
                 {content.description}
             </Typography>
             <Button  
@@ -140,7 +146,9 @@ function Media(){
         image={ImageIcon}
         sx={{
             p : 2,
-            width : 100
+            width : 100,
+            display : {xs : 'none',md : 'revert'}
+
         }}
         >
             
