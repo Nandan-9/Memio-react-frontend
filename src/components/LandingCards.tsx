@@ -118,9 +118,9 @@ function Cards({content}:{content:Contents}){
                 },
                 position : "absolute",
                 top : 130,
-                width : 30,
+                width : {xs : 30,md : 30},
                 bgcolor :'#ffffff' ,
-                ml : 70,
+                ml : {xs : 10,md :70},
             }}
             onClick={()=> handleNavigate(content.c_ID)}
             >
