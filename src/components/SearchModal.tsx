@@ -6,10 +6,10 @@ import { SearchBox } from './SearchBox';
 
 const style = {
   position: 'absolute' as 'absolute',
-  top: '45%',
+  top: {xs:"50%",md : "45%"},
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: 600,
+  width: {xs : 300,md : 600},
   height : 650,
   bgcolor: 'rgb(7, 10, 14)',
   border: '1px solid #333333',
